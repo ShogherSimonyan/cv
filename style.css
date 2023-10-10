@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+mainContainer{
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    margin: 40px 0;
+}
+mainContainer>.work{
+    max-width: 1480px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 30px;
+    justify-content: center;
+}
+mainContainer>.work>a{
+    display: flex;
+    justify-content: center;
+}
+mainContainer>.work>a>img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    padding: 15px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    border-radius: 7px;
+    background: linear-gradient(131deg, white 16.74%, rgba(163, 246, 47, 0.6) 103.17%);
+}
+
+mainContainer>.name{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap:20px ;
+    text-align: center;
+}
+mainContainer>.name>h1{
+    font-size: 50px;
+}
+mainContainer>.name>h2{
+    font-family: 'Dancing Script', cursive;
+    color: rgba(163, 246, 47, 0.42);
+    font-size: 100px;
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+}
+mainContainer>.body{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 450px;
+}
+mainContainer>.body>.left{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    gap: 40px;
+    background-color: rgba(163, 246, 47, 0.42);
+    padding: 30px;
+
+}
+mainContainer>.body>.left>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+mainContainer>.body>.left>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+mainContainer>.body>.left>.contact>.phon>div{
+    display: flex;
+    gap: 10px;
+}
+mainContainer>.body>.left>.contact>.phon>div>p>a{
+    text-decoration: none;
+    color: black;
+}
+mainContainer>.body>.left>.education>.edu>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+mainContainer>.body>.right{
+    flex: 1 1 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+mainContainer>.body>.right>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+mainContainer>.body>.right>.skills>ul{
+    position: relative;
+    left: 20px;
+    list-style-image: url(./img/check-lg\ 1.svg);
+}
+img{
+    width: 80%;
+}
+
+
+.phon>div>img{
+    width: 5%;
+}
